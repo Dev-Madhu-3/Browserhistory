@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  border-width: 0px;
+  width: 100%;
+}
+.sub-con {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.time {
+  font-size: 16px;
+  color: #475569;
+}
+.item-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 40px;
+}
+.title {
+  font-size: 18px;
+  color: black;
+  font-family: Roboto;
+  margin-right: 10px;
+}
+.Url {
+  font-size: 17px;
+  color: #475569;
+  text-decoration: none;
+}
+.delete-icon {
+  width: 20px;
+  height: 20px;
+}
+.btn {
+  background-color: transparent;
+  border-width: 0px;
+}
