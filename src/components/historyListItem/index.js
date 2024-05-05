@@ -2,7 +2,7 @@ import {Component} from 'react'
 import './index.css'
 
 class ListItem extends Component {
-  delete = event => {
+  delete = () => {
     const {eachItem, onDelete} = this.props
     const {id} = eachItem
     onDelete(id)
@@ -21,7 +21,12 @@ class ListItem extends Component {
             <p>{domainUrl}</p>
           </a>
         </div>
-        <button className="btn" onClick={this.delete} data-testid="delete">
+        <button
+          type="button"
+          className="btn"
+          onClick={this.delete}
+          data-testid="delete"
+        >
           <img
             className="delete-icon"
             src="https://assets.ccbp.in/frontend/react-js/delete-img.png"

@@ -3,7 +3,11 @@ import './index.css'
 import ListItem from '../historyListItem'
 
 class SearchApplication extends Component {
-  state = {initialHistoryList: this.props.initialHistoryList}
+  constructor(props) {
+    super(props)
+    const {initialHistoryList} = props
+    this.state = {initialHistoryList}
+  }
 
   onSearch = event => {
     const {initialHistoryList} = this.props
